@@ -1,8 +1,12 @@
 ALPHABET = ('A'..'Z').to_a
 REF_REGEX = /^([A-Z]+)([0-9]+)$/
 
-instructions = STDIN.read.split("\n")
+file = File.open('./inputs/input2.txt')
+instructions = file.read.split("\n")
+# p "instructions", instructions
+# instructions = STDIN.read.split("\n")
 size = instructions.shift
+# p "size", size 
 row_size = size.split.first.to_i
 
 @cells = {}

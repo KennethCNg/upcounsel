@@ -6,7 +6,7 @@ Provided a basic Ruby "spreadsheet calculator" script, refactor and convert into
 
 1. Build a page that will accept input for the spreadsheet calculator in a single `textarea` tag. With the first line as the table size, and then one cell value per line.
 2. On form submission, the page will display the output similar to the results of running the script in the console. This includes the alerting of cyclic dependencies and any other input errors
-3. Upon successful submission, store in a database 
+3. Upon successful submission, store in a database
 
 ### Minimum requirements
 
