@@ -102,8 +102,8 @@ export default class Tables extends React.Component{
                             <h2> Table Input </h2>
                             <Forms 
                                 val={this.state.inputVal}
-                                handleInput={this.handleInput}
-                                handleSubmit={this.handleSubmit}
+                                handleInput={this.handleinput}
+                                handleSubmit={this.handlesubmit}
                                 errors={this.state.errors}
                                 input={true}
                             />
@@ -128,8 +128,8 @@ export default class Tables extends React.Component{
                             <h2> Table Output </h2>
                             <Forms 
                                 val={this.state.outputVal}
-                                handleInput={this.handleInput}
-                                handleSubput={this.handleSubmit}
+                                handleInput={this.handleinput}
+                                handleSubput={this.handlesubmit}
                                 errors={this.state.errors}
                                 input={false}
                             />
