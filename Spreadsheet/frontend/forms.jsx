@@ -10,7 +10,7 @@ const Forms = (props) => {
             </div>
         );
     };
-
+    
     return (
         <div>
             <Form onSubmit={ props.handleSubmit }>
@@ -22,7 +22,7 @@ const Forms = (props) => {
                     onChange={ props.handleInput }
                 />
                 <br/>
-                {props.errors ? props.renderErrors() : null}
+                {props.errors && props.input ? renderErrors() : null}
                 <br/>
                 <div >
                     {props.input ? <Button type="submit" bsStyle="success" bsSize="small">Create A Table</Button> : null} 

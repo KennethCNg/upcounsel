@@ -46,8 +46,7 @@ export default class Tables extends React.Component{
                 this.setNewState(createdTable.cells);
             },
             (err) => {
-                this.setErrorState(err.responseJSON),
-                console.log(err);
+                this.setErrorState(err.responseJSON);
             });  
     }
 
@@ -102,8 +101,8 @@ export default class Tables extends React.Component{
                             <h2> Table Input </h2>
                             <Forms 
                                 val={this.state.inputVal}
-                                handleInput={this.handleinput}
-                                handleSubmit={this.handlesubmit}
+                                handleInput={this.handleInput}
+                                handleSubmit={this.handleSubmit}
                                 errors={this.state.errors}
                                 input={true}
                             />
@@ -128,8 +127,8 @@ export default class Tables extends React.Component{
                             <h2> Table Output </h2>
                             <Forms 
                                 val={this.state.outputVal}
-                                handleInput={this.handleinput}
-                                handleSubput={this.handlesubmit}
+                                handleInput={this.handleInput}
+                                handleSubput={this.handleSubmit}
                                 errors={this.state.errors}
                                 input={false}
                             />
