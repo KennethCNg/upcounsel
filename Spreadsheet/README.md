@@ -8,7 +8,7 @@ A simple "spreadsheet calculator" built on React, Ruby on Rails, and PostgreSQL.
 ### Get Started
 
 1. Install dependencies by running `npm install` followed by `bundle install`
-2. PostgreSQL was my db of coice.Start your database by running `bundle exec rake db:setup`.
+2. PostgreSQL was my db of choice. Start your database by running `bundle exec rake db:setup`.
 3. Start your server by running `bundle exec rails server` and opening `localhost:3000` in your browser.
 4. Start webpack by running `webpack --watch`
 5. Run tests with `bundle exec rspec spec`. (please not some specs are not working properly; see issues portion below)
@@ -49,10 +49,8 @@ I was unsure if I wanted to:
 Front-end Architecture
 
 Things I would've done differently:
-1. Turn stateless classes into functional components
-2. Each cell would be its own component. However, the way I'm currently sending up and storing data about the cells doesn't make it feasible.
-3. The methods I used to generate a table seems way too convoluted - there has to be a better way.
-4. Simply put, write better tests.
+1. Each cell would be its own component. However, the way I'm currently sending up and storing data about the cells doesn't make it feasible.
+2. The methods I used to generate a table seems way too convoluted - there has to be a better way.
 
 #### Issues
 
