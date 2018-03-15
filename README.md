@@ -26,7 +26,7 @@ The schema consists of two tables, `Table` and `Cell`. `Cells` belong to a `Tabl
 
 #### Front-end
 
-![screenshot](./app/assets/images/screen_shot1.png)
+![screenshot](./Spreadsheet/app/assets/images/screen_shot1.png)
 
 The spreadsheet is made of three components, Tables (parent), Forms (child), Grids (child). In retrospect, these could've been better names because of bootstrap's naming conventions, but we're literally working with Tables, Forms, and Spreadsheets. Tables holds the state  passing them down to its children as props. Forms only deals with taking the user input and posting it to the back-end. The event-listener functions on the forms are in the Table's component, and passed as props. The same goes for the Grid component.
 
