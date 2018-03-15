@@ -46,6 +46,7 @@ export default class Tables extends React.Component{
                 this.setNewState(createdTable.cells);
             },
             (err) => {
+                debugger;
                 this.setErrorState(err.responseJSON);
             });  
     }
